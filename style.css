@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  text-align: left;  
+  width: 20vw;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;  
+  
+}
+
+.inbox {
+  width: 20vw;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  box-shadow: 1px 0 8px 2px rgba(153, 153, 153, 0.5);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+.item:not(:last-of-type) {
+  border-bottom: 1px solid rgba(196, 196, 196, 0.2);
+}
+
+.checkbox, .unCheckbox {
+  margin: 8px 12px;
+}
+
+.item p {
+  /* margin-left: 8px; */
+  border-left: 1px solid rgba(196, 196, 196, 0.2);
+  padding: 8px 12px;
+}
+
+.btn-checkbox, .btn-uncheckbox {
+  margin: 8px 12px;
+  outline: none;
+  border: none;
+  padding: 6px 8px;
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(230, 228, 228);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn-checkbox {
+  color: green
+}
+
+.btn-uncheckbox:hover, .btn-uncheckbox:focus {
+  color: white;
+  background-color: red;
+}
+
+.btn-checkbox:hover, .btn-checkbox:focus {
+  color: white;
+  background-color: green;
+}
+
+.check-uncheck {
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .inbox, h3 {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .inbox, h3 {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .inbox, h3 {
+    width: 80vw;
+  }
+}
+
